@@ -43,7 +43,7 @@ python simple_eval.py
 
 ## Acknowledgments
 
-Code refers to [Admix](https://github.com/JHL-HUST/SI-NI-FGSM) and [Grad-Cam](https://github.com/JHL-HUST/VT).
+Code refers to [Admix](https://github.com/JHL-HUST/Admix) and [Grad-Cam](https://github.com/JHL-HUST/VT).
 
 ## Contact
 
