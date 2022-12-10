@@ -2,7 +2,7 @@
 
 This repository contains code to reproduce results from the paper:
 
-MixCam: Boosting the transferability of adversarial example with class activate map
+MixCam-Attack: Boosting the Transferability of Adversarial Examples with Class Activation Mapping
 
 Sensen Guo, Xiaoyu Li, Peican Zhu, Dejun Mu
 
@@ -30,7 +30,7 @@ All the provided codes generate adversarial examples on inception_v3 model. If y
 Taking Admix attack for example, you can run this attack as following:
 
 ```
-CUDA_VISIBLE_DEVICES=gpuid python mi_admix.py 
+python mi_admix.py 
 ```
 
 #### Evaluating the attack
@@ -38,7 +38,7 @@ CUDA_VISIBLE_DEVICES=gpuid python mi_admix.py
 The generated adversarial examples would be stored in directory `./outputs`. Then run the file `simple_eval.py` to evaluate the success rate of each model used in the paper:
 
 ```
-CUDA_VISIBLE_DEVICES=gpuid python simple_eval.py
+python simple_eval.py
 ```
 
 ## Acknowledgments
