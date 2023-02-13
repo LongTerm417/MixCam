@@ -24,7 +24,7 @@ tf.flags.DEFINE_integer('batch_size', 50, 'How many images process at one time.'
 
 tf.flags.DEFINE_integer('size', 3, 'Number of randomly sampled images')
 
-tf.flags.DEFINE_float('portion', 0.5, 'protion for the mixed image')
+tf.flags.DEFINE_float('portion', 0.6, 'protion for the mixed image')
 
 tf.flags.DEFINE_integer('image_width', 299, 'Width of each input images.')
 
@@ -38,7 +38,7 @@ tf.flags.DEFINE_string('model_name', "inception_v3", "Name of the model")
 
 tf.flags.DEFINE_string('attack_method', "", "Name of the model")
 
-tf.flags.DEFINE_integer('sigma', 20, "Name of the model")
+tf.flags.DEFINE_integer('sigma', 10, "Name of the model")
 
 tf.flags.DEFINE_string('mix_op', 'mixup', 'Output directory with images.')
 
