@@ -38,7 +38,7 @@ tf.flags.DEFINE_integer('num_iter', 10, 'max iteration.')
 
 tf.flags.DEFINE_float('momentum', 1.0, 'momentum about the model.')
 
-tf.flags.DEFINE_float('portion', 0.5, 'protion for the mixed image')
+tf.flags.DEFINE_float('portion', 0.6, 'protion for the mixed image')
 
 tf.flags.DEFINE_integer('size', 3, 'Number of randomly sampled images')
 
@@ -62,7 +62,7 @@ tf.flags.DEFINE_string('attack_method', "", "Name of the model")
 
 tf.flags.DEFINE_integer('percentile', 90, "Name of the model")
 
-tf.flags.DEFINE_integer('sigma', 20, "Name of the model")
+tf.flags.DEFINE_integer('sigma', 10, "Name of the model")
 
 tf.flags.DEFINE_string('mix_op', 'mixup', 'Output directory with images.')
 
