@@ -1,6 +1,6 @@
 # coding=utf-8
-"""Implementation of admix attack."""
-# admix before scale
+"""Implementation of MixCam attack."""
+# MixCam before scale
 
 from __future__ import absolute_import
 from __future__ import division
