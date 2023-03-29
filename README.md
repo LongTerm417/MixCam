@@ -2,9 +2,9 @@
 
 This repository contains code to reproduce results from the paper:
 
-MixCam-Attack: Boosting the Transferability of Adversarial Examples with Class Activation Mapping
+MixCam-Attack: Boosting the Transferability of Adversarial Examples with Targeted Data Augmentation
 
-Sensen Guo, Xiaoyu Li, Peican Zhu, Dejun Mu
+Sensen Guo, Xiaoyu Li, Peican Zhu, Zhiying Mu, Jinxiong Zhao
 
 ## Requirements
 + Python >= 3.6.5
