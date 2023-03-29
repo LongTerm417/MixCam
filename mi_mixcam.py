@@ -312,8 +312,8 @@ def graph(x, y, i, x_max, x_min, grad):
 
     cam_value = grad_cam(end_points=end_points_inc_v3, predicted_class=y, nb_classes=num_classes)
 
-    x_admix = cam_augment(x, cam_value)
-    x_batch = tf.concat([x_admix, x_admix / 2., x_admix / 4., x_admix / 8., x_admix / 16.], axis=0)
+    x_enhanced = cam_augment(x, cam_value)
+    x_batch = tf.concat([x_enhanced, x_enhanced / 2., x_enhanced / 4., x_enhanced / 8., x_enhanced / 16.], axis=0)
     num_size = len(percentile_list)
 
     '''input diversity'''
@@ -394,23 +394,6 @@ def input_diversity(input_tensor):
 from skimage import io
 from matplotlib import pyplot as plt
 import cv2
-
-
-def save_cam_images(images, cams, file_names):
-    for i, img in enumerate(images):
-        cam3 = cams[i]
-        # cam3 = np.reshape(cam3, [10, 10])
-        cam3 = cv2.resize(cam3, (FLAGS.image_width, FLAGS.image_width))
-        # cam3 = cv2.applyColorMap(np.uint8(255 * cam3), cv2.COLORMAP_JET)
-        # cam3 = cv2.cvtColor(cam3, cv2.COLOR_BGR2RGB)
-
-        # Superimposing the visualization with the image.
-        # alpha = 0.0025
-        # new_img = img + alpha * cam3
-        # new_img /= new_img.max()
-        new_img = cam3 / cam3.max()
-        # Display and save
-        io.imsave(os.path.join('/data/user/gss/code/trans/Admix-main/cam_pic', file_names[i]), new_img)
 
 model_variables_map = {"resnet_v2": ["resnet_v2", "resnet_v2"],
                        "inception_v3": ["InceptionV3", "inception_v3"],
