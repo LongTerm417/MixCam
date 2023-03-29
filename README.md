@@ -27,7 +27,7 @@ All the provided codes generate adversarial examples on inception_v3 model. If y
 
 #### Runing attack
 
-Taking Admix attack for example, you can run this attack as following:
+Taking MixCam attack for example, you can run this attack as following:
 
 ```
 python mi_mixcam.py 
