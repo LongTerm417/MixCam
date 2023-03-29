@@ -165,13 +165,7 @@ def check_or_create_dir(directory):
     if not os.path.exists(directory):
         os.makedirs(directory)
 
-
-# def admix(x, cam_value):
-#     cam_info = tf.multiply(x, tf.reshape(cam_value, [FLAGS.batch_size, FLAGS.image_width, FLAGS.image_width, 1]))
-#     indices = tf.range(start=0, limit=tf.shape(x)[0], dtype=tf.int32)
-#     return tf.concat([(x + FLAGS.portion * tf.gather(cam_info, tf.random.shuffle(indices))) for _ in range(FLAGS.size)], axis=0)
-
-
+        
 def grad_cam(end_points, predicted_class, nb_classes=1001, eval_image_size=FLAGS.image_height):
     _logits_name = "Logits"
     # Conv layer tensor [?,10,10,2048]
