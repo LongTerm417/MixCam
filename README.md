@@ -2,7 +2,7 @@
 
 This repository contains code to reproduce results from the paper:
 
-MixCam-Attack: Boosting the Transferability of Adversarial Examples with Targeted Data Augmentation
+[MixCam-Attack: Boosting the Transferability of Adversarial Examples with Targeted Data Augmentation](https://www.sciencedirect.com/science/article/abs/pii/S0020025523015037)
 
 Sensen Guo, Xiaoyu Li, Peican Zhu, Zhiying Mu, Jinxiong Zhao
 
