@@ -4,11 +4,11 @@ This repository contains code to reproduce results from the paper:
 
 [MixCam-Attack: Boosting the Transferability of Adversarial Examples with Targeted Data Augmentation](https://www.sciencedirect.com/science/article/abs/pii/S0020025523015037)
 
-Sensen Guo, Xiaoyu Li, Peican Zhu, Zhiying Mu, Jinxiong Zhao
+Sensen Guo, Xiaoyu Li, Peican Zhu, Baocang Wang, Zhiying Mu and Jinxiong Zhao
 
 ## Requirements
 + Python >= 3.6.5
-+ Tensorflow >= 1.12.0
++ 1.12.0 <= Tensorflow <= 15.0
 + Numpy >= 1.15.4
 + opencv >= 3.4.2
 + scipy > 1.1.0
